@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechAcademy - Webプログラミングコース</title>
+    <meta name="description" content="最短で実践的なスキルを習得する、次世代のオンラインITスクール。">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" style="background-color: transparent; border-bottom: none; position: absolute;">
+        <div class="container header-container">
+            <a href="index.html" class="logo" style="display:flex; align-items:center; gap:12px; text-decoration: none;">
+                <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #8237FC, #A78BFA); color: white; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 700;">S</div>
+                <div style="display:flex; flex-direction:column; line-height:1.2;">
+                    <span style="font-size: 1.25rem; font-weight: 700; letter-spacing: 0.05em; color: white;">SkillNova</span>
+                    <span style="font-size: 0.75rem; color: #a0aec0;">スキルノバ株式会社</span>
+                </div>
+            </a>
+            <div class="menu-icon" style="color: white; font-size: 1.5rem; cursor: pointer;">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section hero-dark">
+            <div class="hero-glow"></div>
+            <div class="container hero-container" style="justify-content: center; text-align: center; position: relative; z-index: 2;">
+                <div class="hero-content" style="max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; align-items: center;">
+                    <span class="hero-badge">AI時代のスキルを、実践から学ぶ</span>
+                    <h1 class="hero-title" style="color: white; font-size: 4rem; letter-spacing: -0.03em; margin-bottom: 24px;">新しい<span class="text-gradient">スキル</span>が、<br>あなたの<span class="text-gradient">武器</span>になる。</h1>
+                    <p class="hero-subtitle" style="color: #94a3b8; font-size: 1.25rem; max-width: 600px; line-height: 1.8;">未経験からAIエンジニアへ。実践型カリキュラムと<br>現役講師の伴走で、キャリアを次のステージへ。</p>
+                    <div class="hero-buttons" style="justify-content: center; margin-top: 24px; display: flex; flex-direction: row; gap: 16px;">
+                        <a href="#courses" class="btn btn-purple btn-large" style="border-radius: 50px; padding: 16px 40px;">コース一覧を見る</a>
+                        <a href="#contact" class="btn btn-outline-purple btn-large" style="border-radius: 50px; padding: 16px 40px; border-color: rgba(255,255,255,0.2); color: white;">無料カウンセリング</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses" class="courses-section">
+            <div class="container">
+                <div class="section-label">COURSES & SERVICES</div>
+                <h2>コース一覧</h2>
+                <p class="section-text">
+                  未経験からプロフェッショナルまで、目的に合わせた多彩なコースをご用意
+                </p>
+
+                <div class="course-grid">
+                  <article class="course-card" style="--accent: linear-gradient(135deg, #1f3c88, #111827); background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80');">
+                    <div class="card-content">
+                      <h3>AI実践マスターコース</h3>
+                      <p>3ヶ月集中でAIスキルをゼロから実務レベルまで。少人数制＆認定コーチング。</p>
+                      <a href="course-details.html" class="card-link">詳しく見る <span>›</span></a>
+                    </div>
+                  </article>
+
+                  <article class="course-card" style="--accent: linear-gradient(135deg, #4535ff, #0b1b78); background-image: url('https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80');">
+                    <div class="card-content">
+                      <h3>生成AI活用講座</h3>
+                      <p>ChatGPT・Claude・画像生成AIなど、今すぐ仕事に使える生成AIスキルを習得。</p>
+                      <a href="course-details.html" class="card-link">詳しく見る <span>›</span></a>
+                    </div>
+                  </article>
+
+                  <article class="course-card" style="--accent: linear-gradient(135deg, #15986f, #09251d); background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80');">
+                    <div class="card-content">
+                      <h3>法人AI研修プログラム</h3>
+                      <p>企業の課題・レベルに合わせてカスタム設計。全社的なAIリテラシー向上を支援。</p>
+                      <a href="contact-corporate.html" class="card-link">詳しく見る <span>›</span></a>
+                    </div>
+                  </article>
+
+                  <article class="course-card" style="--accent: linear-gradient(135deg, #8338ec, #081021); background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80');">
+                    <div class="card-content">
+                      <h3>データサイエンス入門</h3>
+                      <p>Pythonとデータ分析の基礎を固め、ビジネスデータから価値ある示唆を導き出す。</p>
+                      <a href="course-details.html" class="card-link">詳しく見る <span>›</span></a>
+                    </div>
+                  </article>
+
+                  <article class="course-card" style="--accent: linear-gradient(135deg, #d63384, #240018); background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80');">
+                    <div class="card-content">
+                      <h3>AIキャリアスクール</h3>
+                      <p>AI分野への転職・キャリアアップを徹底サポート。ポートフォリオ作成も対応。</p>
+                      <a href="course-details.html" class="card-link">詳しく見る <span>›</span></a>
+                    </div>
+                  </article>
+
+                  <article class="course-card" style="--accent: linear-gradient(135deg, #c56a23, #160b04); background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80');">
+                    <div class="card-content">
+                      <h3>ジュニアAIラボ</h3>
+                      <p>小中高生が楽しみながらAI・プログラミングを学ぶ、未来型の探究コース。</p>
+                      <a href="course-details.html" class="card-link">詳しく見る <span>›</span></a>
+                    </div>
+                  </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="glass-achievements">
+            <div class="achievements-glow"></div>
+            <div class="container relative z-10 text-center">
+                <div class="section-label" style="color: #A78BFA; margin-bottom: 8px; font-size: 11px; letter-spacing: 0.18em; font-weight: 700;">ACHIEVEMENTS</div>
+                <h2 class="section-title" style="color: white; margin-bottom: 48px;">数字で見るスキルノバ</h2>
+                
+                <div class="achievements-grid-glass">
+                    <div class="glass-card delay-1">
+                        <i class="fa-solid fa-rocket card-icon icon-gradient-glow"></i>
+                        <div class="achievement-wrapper">
+                            <span class="achievement-number" data-target="12000" data-decimals="0">0</span>
+                            <span class="achievement-suffix suffix-plus">+</span>
+                        </div>
+                        <div class="achievement-label">累計受講生数</div>
+                    </div>
+                    <div class="glass-card delay-2">
+                        <i class="fa-solid fa-chart-line card-icon icon-gradient-glow"></i>
+                        <div class="achievement-wrapper">
+                            <span class="achievement-number" data-target="94.2" data-decimals="1">0</span>
+                            <span class="achievement-suffix suffix-percent">%</span>
+                        </div>
+                        <div class="achievement-label">目標達成率</div>
+                    </div>
+                    <div class="glass-card delay-3">
+                        <i class="fa-solid fa-building card-icon icon-gradient-glow"></i>
+                        <div class="achievement-wrapper">
+                            <span class="achievement-number" data-target="150" data-decimals="0">0</span>
+                            <span class="achievement-suffix suffix-plus">+</span>
+                        </div>
+                        <div class="achievement-label">法人導入数</div>
+                    </div>
+                    <div class="glass-card delay-4">
+                        <i class="fa-solid fa-star card-icon icon-gradient-glow"></i>
+                        <div class="achievement-wrapper">
+                            <span class="achievement-number" data-target="4.9" data-decimals="1">0</span>
+                            <span class="achievement-suffix suffix-rating">/5</span>
+                        </div>
+                        <div class="achievement-label">受講生満足度</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section id="news" class="news-section section-bg-light">
+            <div class="container">
+                <div class="news-header">
+                    <div>
+                        <p class="news-section-label">NEWS</p>
+                        <h2 class="news-section-title">お知らせ</h2>
+                    </div>
+                    <a href="#" class="all-link">すべてのニュース ＞</a>
+                </div>
+
+                <div class="news-layout">
+                    <article class="main-news news-card">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" alt="">
+                        <div class="main-news-body">
+                            <div class="meta">
+                                <span class="badge yellow">受賞</span>
+                                <span>2026.3.5</span>
+                            </div>
+                            <h3>AIスクール部門で2年連続「ベストスクール賞」を受賞</h3>
+                            <p>受講生満足度・転職成功率・カリキュラム品質の3部門で最高評価を獲得。</p>
+                        </div>
+                    </article>
+
+                    <div class="side-news">
+                        <article class="side-card news-card">
+                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=400&q=80" alt="">
+                            <div>
+                                <div class="meta">
+                                    <span class="badge blue">新コース</span>
+                                    <span>2026.2.15</span>
+                                </div>
+                                <h3>新コース「生成AI実践マスター」4月開講</h3>
+                                <p>ChatGPT・Claude・画像生成AI・動画AIを網羅する集中講座がスタート。</p>
+                            </div>
+                        </article>
+
+                        <article class="side-card news-card">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=400&q=80" alt="">
+                            <div>
+                                <div class="meta">
+                                    <span class="badge green">法人連携</span>
+                                    <span>2026.1.20</span>
+                                </div>
+                                <h3>大手IT企業5社とAI人材育成の包括連携を締結</h3>
+                                <p>共同カリキュラム開発と修了生の優先採用枠を設置。</p>
+                            </div>
+                        </article>
+
+                        <article class="side-card news-card">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=400&q=80" alt="">
+                            <div>
+                                <div class="meta">
+                                    <span class="badge purple">実績</span>
+                                    <span>2025.12.10</span>
+                                </div>
+                                <h3>累計受講生が12,000名を突破しました</h3>
+                                <p>個人・法人を合わせた累計受講生数が12,000名を突破。</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="voices" class="testimonials-section section-bg-light">
+            <div class="container">
+                <p class="testimonials-section-label">TESTIMONIALS</p>
+                <h2 class="testimonials-section-title">受講生の声</h2>
+                <p class="testimonials-section-text">スキルノバで学び、キャリアを変えた方々のリアルな声</p>
+
+                <div class="testimonial-grid">
+                    <article class="testimonial-card">
+                        <div class="quote-icon">“</div>
+                        <div class="stars">★★★★★</div>
+                        <p class="voice">
+                            “文系出身でプログラミング未経験でしたが、3ヶ月のマスターコースで基礎から学び、卒業後すぐにAIエンジニアとして転職できました。”
+                        </p>
+                        <div class="profile">
+                            <div class="avatar purple">M</div>
+                            <div>
+                                <h3>山口 真理</h3>
+                                <p>元・営業職 → AIエンジニアに転職</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="quote-icon">“</div>
+                        <div class="stars">★★★★★</div>
+                        <p class="voice">
+                            “法人研修を導入して半年、社員のAI活用率が大幅に上がりました。カスタムカリキュラムが自社の課題にぴったりでした。”
+                        </p>
+                        <div class="profile">
+                            <div class="avatar violet">K</div>
+                            <div>
+                                <h3>佐藤 健一</h3>
+                                <p>株式会社テクノブリッジ / 人事部長</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="quote-icon">“</div>
+                        <div class="stars">★★★★★</div>
+                        <p class="voice">
+                            “生成AI講座を受けてから、仕事の効率が劇的に変わりました。記事制作まで、AIを使いこなせるようになりました。”
+                        </p>
+                        <div class="profile">
+                            <div class="avatar green">A</div>
+                            <div>
+                                <h3>小林 あかり</h3>
+                                <p>フリーランス / コンテンツクリエイター</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="company" class="about-section">
+            <p class="section-label">ABOUT US</p>
+            <h2>会社概要</h2>
+
+            <div class="mission-card">
+                <div class="mission-content">
+                    <p class="mission-label">OUR MISSION</p>
+                    <h3>新しいスキルが、あなたの武器になる。</h3>
+                    <p>
+                        AI時代に求められるのは、ツールの使い方ではなく「AIと共に考え、創る力」。
+                        スキルノバは実践を通してその力を育み、一人ひとりのキャリアと人生を変える教育を提供します。
+                    </p>
+                </div>
+            </div>
+
+            <div class="about-grid">
+                <article class="message-card">
+                    <div class="profile-header">
+                        <div class="logo-icon">S</div>
+                        <div>
+                            <p>代表取締役CEO</p>
+                            <h3>藤原 翔太</h3>
+                            <span>Shota Fujiwara</span>
+                        </div>
+                    </div>
+
+                    <h4>代表メッセージ</h4>
+                    <p>
+                        AI時代に求められるのは、ツールの使い方ではなく
+                        「AIと共に考え、創る力」です。スキルノバは、実践を通じて本質的なスキルを身につけ、
+                        キャリアも人生も自分の手でデザインできる人を育てます。
+                    </p>
+                    <p>
+                        「学んで終わり」ではなく「学んで変わる」。
+                        私たちはその変化に伴走し続けます。
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <h3>会社情報</h3>
+
+                    <dl>
+                        <div>
+                            <dt>会社名</dt>
+                            <dd>スキルノバ株式会社（SkillNova Inc.）</dd>
+                        </div>
+                        <div>
+                            <dt>代表者</dt>
+                            <dd>藤原 翔太</dd>
+                        </div>
+                        <div>
+                            <dt>所在地</dt>
+                            <dd>東京都渋谷区道玄坂1-10-8</dd>
+                        </div>
+                        <div>
+                            <dt>設立</dt>
+                            <dd>2023年</dd>
+                        </div>
+                        <div>
+                            <dt>事業内容</dt>
+                            <dd>AI特化型スクール運営 / 法人向けAI研修プログラム / オンライン学習プラットフォーム / AI人材キャリア支援</dd>
+                        </div>
+                        <div>
+                            <dt>受賞</dt>
+                            <dd>AIスクール部門「ベストスクール賞」2年連続受賞</dd>
+                        </div>
+                        <div>
+                            <dt>実績</dt>
+                            <dd>累計受講生12,000名以上 / 転職成功率94.2%</dd>
+                        </div>
+                    </dl>
+                </article>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="team-section">
+            <p class="team-section-label">TEAM</p>
+            <h2 class="team-section-title">スキルノバのチーム</h2>
+            <p class="team-section-text">
+                教育とテクノロジーの専門家が集まり、受講生一人ひとりの「変わりたい」に寄り添います
+            </p>
+
+            <div class="team-hero">
+                <h3>現役エンジニア・教育のプロ・キャリアアドバイザーが、<br>あなたの学びとキャリアの成功を全力でサポートします。</h3>
+            </div>
+
+            <div class="member-grid">
+                <article class="member-card">
+                    <div class="avatar purple">S</div>
+                    <h3>藤原 翔太</h3>
+                    <span>代表取締役CEO</span>
+                    <p>元大手IT企業のAI部門責任者。教育×AIの可能性を信じて起業。</p>
+                </article>
+
+                <article class="member-card">
+                    <div class="avatar violet">H</div>
+                    <h3>石井 遥</h3>
+                    <span>カリキュラムディレクター</span>
+                    <p>教育工学の専門家。受講生の学習体験を設計するカリキュラムを統括。</p>
+                </article>
+
+                <article class="member-card">
+                    <div class="avatar green">S</div>
+                    <h3>渡辺 翔太</h3>
+                    <span>リードインストラクター</span>
+                    <p>現役AIエンジニア。実務経験に基づく実践的な指導が強み。</p>
+                </article>
+
+                <article class="member-card">
+                    <div class="avatar pink">M</div>
+                    <h3>小林 美月</h3>
+                    <span>キャリアサクセスマネージャー</span>
+                    <p>転職成功率94.2％を支えるキャリア支援のプロフェッショナル。</p>
+                </article>
+            </div>
+
+            <div class="stats-card">
+                <h3>数字でみるスキルノバの働き方</h3>
+
+                <div class="stats-grid">
+                    <div>
+                        <div class="icon">🏠</div>
+                        <strong>90%</strong>
+                        <p>フルリモート率</p>
+                    </div>
+                    <div>
+                        <div class="icon">🎂</div>
+                        <strong>29歳</strong>
+                        <p>平均年齢</p>
+                    </div>
+                    <div>
+                        <div class="icon">🌴</div>
+                        <strong>93%</strong>
+                        <p>有給取得率</p>
+                    </div>
+                    <div>
+                        <div class="icon">⭐</div>
+                        <strong>4.8/5</strong>
+                        <p>社員満足度</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="recruit-button">採用情報を見る ＞</a>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <p class="section-label">START YOUR JOURNEY</p>
+            <h2>あなたの新しいキャリアを、<br>ここから始めませんか？</h2>
+            <p>無料カウンセリングで、あなたに最適な学習プランをご提案します。</p>
+
+            <div class="cta-buttons">
+                <a href="#" class="primary-btn">無料カウンセリングを予約</a>
+                <a href="#" class="outline-btn">資料請求</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="contact-cards">
+                <div class="mini-card">
+                    <div class="mini-icon">♙</div>
+                    <div>
+                        <h3>個人のお客様</h3>
+                        <p>無料カウンセリングを予約して、あなたに最適なコースを見つけましょう</p>
+                        <a href="#">カウンセリングを予約 ＞</a>
+                    </div>
+                </div>
+
+                <div class="mini-card">
+                    <div class="mini-icon">▣</div>
+                    <div>
+                        <h3>法人のお客様</h3>
+                        <p>AI研修プログラムの導入や自社課題のご相談はこちら</p>
+                        <a href="#">法人向けお問い合わせ ＞</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p class="section-label">CONTACT</p>
+                    <h2>その他のお問い合わせ</h2>
+                    <p class="lead">
+                        メディア・取材・採用、その他ご質問など、お気軽にお問い合わせください。
+                    </p>
+
+                    <div class="info-item">
+                        <span>📍</span>
+                        <div>
+                            <strong>所在地</strong>
+                            <p>東京都渋谷区道玄坂1-10-8</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span>🌐</span>
+                        <div>
+                            <strong>Webサイト</strong>
+                            <p>skillnova.example.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-row">
+                        <label>
+                            お名前 *
+                            <input type="text" value="山田 太郎">
+                        </label>
+
+                        <label>
+                            メールアドレス *
+                            <input type="email" value="taro@example.com">
+                        </label>
+                    </div>
+
+                    <label>
+                        会社名・所属
+                        <input type="text" value="株式会社〇〇 / フリーランス">
+                    </label>
+
+                    <label>
+                        お問い合わせ種別
+                        <select>
+                            <option>選択してください</option>
+                            <option>個人向け講座について</option>
+                            <option>法人研修について</option>
+                            <option>取材・採用について</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        お問い合わせ内容 *
+                        <textarea placeholder="お問い合わせ内容をご入力ください"></textarea>
+                    </label>
+
+                    <button type="submit">送信する</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h4>TechAcademy</h4>
+                    <p>次世代のIT人材を育成するオンラインプログラミングスクール。最短でプロフェッショナルへの道をサポートします。</p>
+                </div>
+                <div class="footer-links">
+                    <h5>コース情報</h5>
+                    <ul>
+                        <li><a href="course-details.html">Webアプリケーション開発</a></li>
+                        <li><a href="course-details.html">AI & データサイエンス</a></li>
+                        <li><a href="course-details.html">UI/UXデザイン</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h5>企業情報・ポリシー</h5>
+                    <ul>
+                        <li><a href="#company">会社概要</a></li>
+                        <li><a href="privacy.html">プライバシーポリシー</a></li>
+                        <li><a href="terms.html">利用規約</a></li>
+                        <li><a href="commercial-transactions.html">特定商取引法に基づく表記</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TechAcademy. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot Toggle Icon -->
+    <div class="chatbot-toggle" id="chatbot-toggle">
+        <i class="fa-solid fa-comment-dots"></i>
+    </div>
+
+    <!-- Chatbot Window -->
+    <div class="chatbot-window" id="chatbot-window">
+        <div class="chatbot-header">
+            <div class="chatbot-title">
+                <i class="fa-solid fa-robot"></i> TechAcademy AI
+            </div>
+            <i class="fa-solid fa-xmark chatbot-close" id="chatbot-close"></i>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="chat-bubble bot">
+                こんにちは！TechAcademyのAIアシスタントです。<br>会社概要やコースについて、何かご質問はありますか？
+            </div>
+        </div>
+        <div class="chatbot-input-area">
+            <input type="text" class="chatbot-input" id="chatbot-input" placeholder="メッセージを入力...">
+            <button class="chatbot-send" id="chatbot-send">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // FAQ Accordion Logic (if any on this page, but keeping just in case)
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentNode;
+                const isActive = item.classList.contains('active');
+                
+                document.querySelectorAll('.faq-item').forEach(i => {
+                    i.classList.remove('active');
+                });
+
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Counter Animation with Intersection Observer
+        document.addEventListener('DOMContentLoaded', () => {
+            const counters = document.querySelectorAll('.achievement-number');
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const targetCard = entry.target.closest('.glass-card');
+                        if (targetCard) targetCard.classList.add('visible');
+                        
+                        const counter = entry.target;
+                        const target = parseFloat(counter.getAttribute('data-target'));
+                        const decimals = parseInt(counter.getAttribute('data-decimals') || '0');
+                        const duration = 2000; // 2 seconds
+                        const frameRate = 1000 / 60;
+                        const totalFrames = Math.round(duration / frameRate);
+                        let frame = 0;
+
+                        // Easing out cubic
+                        const easeOutQuart = t => 1 - (--t) * t * t * t;
+
+                        const updateCounter = () => {
+                            frame++;
+                            const progress = easeOutQuart(frame / totalFrames);
+                            const current = target * progress;
+
+                            if (frame < totalFrames) {
+                                if (decimals > 0) {
+                                    counter.innerText = current.toFixed(decimals);
+                                } else {
+                                    counter.innerText = Math.floor(current).toLocaleString();
+                                }
+                                requestAnimationFrame(updateCounter);
+                            } else {
+                                if (decimals > 0) {
+                                    counter.innerText = target.toFixed(decimals);
+                                } else {
+                                    counter.innerText = target.toLocaleString();
+                                }
+                                // Fade in suffix after counting finishes
+                                const wrapper = counter.closest('.achievement-wrapper');
+                                if (wrapper) {
+                                    const suffix = wrapper.querySelector('.achievement-suffix');
+                                    if (suffix) suffix.classList.add('visible');
+                                }
+                            }
+                        };
+
+                        requestAnimationFrame(updateCounter);
+                        observer.unobserve(counter);
+                    }
+                });
+            }, observerOptions);
+
+            counters.forEach(counter => {
+                observer.observe(counter);
+            });
+        });
+    </script>
+    <script src="chatbot.js"></script>
+</body>
+</html>
